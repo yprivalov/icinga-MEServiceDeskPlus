@@ -25,9 +25,9 @@ $request_string=<<<JSON
         "details": {
             "requester": "Monitoring",
             "requestType": "Incident",
-            "subject": $subject,
+            "subject": "$subject",
             "category": "Monitoring",
-            "subcategory": $subcategory,
+            "subcategory": "$subcategory",
             "description": "Specify Description",
             "priority": "High",
             "site": "New York",

@@ -16,7 +16,7 @@ $item=$argv[3];
 $subject=$state." state on ".$subcategory." with service ".$item;
 
 // Задаем API Key специалиста:
-$TK='50B971C0-4C98-4011-995E-30B17B957CCD'
+$TK='50B971C0-4C98-4011-995E-30B17B957CCD';
 
 // Формируем инцидент:
 $request_string=<<<JSON

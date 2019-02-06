@@ -19,7 +19,7 @@ $subject=$state." state on ".$subcategory." with service ".$item;
 $TK='50B971C0-4C98-4011-995E-30B17B957CCD'
 
 // Формируем инцидент:
-$request_xmlstring=<<<JSON
+$request_string=<<<JSON
 {
     "operation": {
         "details": {
@@ -27,7 +27,7 @@ $request_xmlstring=<<<JSON
             "requestType": "Incident",
             "subject": $subject,
             "category": "Monitoring",
-            "subcategory": $subcategory
+            "subcategory": $subcategory,
             "description": "Specify Description",
             "priority": "High",
             "site": "New York",

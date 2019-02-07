@@ -1,7 +1,5 @@
 <?php
 
-//ini_set('arg_separator.output','&amp;');
-
 // Задаем URL, по которому будем обращаться к REST API:
 $url='http://192.168.43.250/sdpapi/request';
 
@@ -20,8 +18,6 @@ $subject=$state." service ".$service." on ".$host;
 
 // Формируем описание инцидента
 $desc='Host: '.$host.' <br/> Service: '.$service.' <br/> Status: '.$state.' <br/><br/> http://192.168.42.58/icingaweb2/monitoring/service/show?host='.$host.'%26service='.$service.'';
-
-// echo $desc;
 
 // Задаем API Key специалиста:
 $TK='50B971C0-4C98-4011-995E-30B17B957CCD';

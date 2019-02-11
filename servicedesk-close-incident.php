@@ -20,7 +20,7 @@ $get_requests='
         "details": {
             "from": "0",
             "limit": "50",
-            "filterby": "1_MyView"
+            "filterby": "2_MyView"
         }
     }
 }
@@ -65,7 +65,7 @@ $arr = json_decode($requests, true);
 foreach($arr as $key)
 {
     //echo '<div class="row"><div class="span6">'.$v->productName.'</div><div class="span3">'.$v->productPrice.'</div></div>';
-    $WORKORDERID = $v->WORKORDERID;
+    $WORKORDERID = $key->WORKORDERID;
     echo $WORKORDERID;
 }
 
